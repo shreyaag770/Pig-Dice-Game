@@ -11,6 +11,8 @@ GAME RULES:
 
 
 var scores,roundScore,activePlayer,gamePlaying;
+
+
 init();
 
 document.querySelector('.btn-roll').addEventListener('click', function()
@@ -24,6 +26,7 @@ document.querySelector('.btn-roll').addEventListener('click', function()
         diceDOM.style.display='block';
         diceDOM.src='dice-'+ dice +'.png';
     
+        
     
         if(dice!=1)
         {
