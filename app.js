@@ -17,12 +17,7 @@ init();
 
 document.querySelector('.btn-roll').addEventListener('click', function()
 {
-
-
-
-
-    
-    if(gamePlaying)
+if(gamePlaying)
     {
         var dice = Math.floor(Math.random()*6)+1;
     
@@ -106,9 +101,6 @@ function init()
     document.querySelector('.player-1-panel').classList.remove('active');   
     document.querySelector('.player-1-panel').classList.remove('active');     
     document.querySelector('.player-0-panel').classList.add('active');   
-    
-    // document.querySelector('#current-'+ activePlayer).textContent=dice;
-    // document.querySelector('#current-'+activePlayer).innerHTML='<em>' + dice+'<em>';
     document.querySelector('.dice').style.display='none'; 
     document.getElementById('score-0').textContent='0';
     document.getElementById('score-1').textContent='0';
